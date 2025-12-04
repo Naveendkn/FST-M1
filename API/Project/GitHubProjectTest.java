@@ -15,7 +15,7 @@ import io.restassured.specification.ResponseSpecification;
 
 public class GitHubProjectTest {
 	// SSH Key to test with
-	String sshKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPtLIpXaLC04RnOs5/8yWeUWAW1svSf7DtaGxErl95xP";
+	String sshKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKIx3c2J4JS7WI1BftGxdIEkNNTYXaAdw8dZMtUkxGxH your_email@example.com";
 	// Temp variable to share id
 	int keyId;
 	// Declare the request and response specs
@@ -73,3 +73,4 @@ public class GitHubProjectTest {
 		then().statusCode(204).time(Matchers.lessThanOrEqualTo(3000L));
 	}
 }
+
